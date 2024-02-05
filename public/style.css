@@ -415,8 +415,144 @@ body{
     font-size: 18px;
     color: #605E5D;
 }
+.contentBar_2{
+    width: 100%;
+    height: 689px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+}
+.contentBar_2-Items{
+    width: 85%;
+    height: 689px;
+    background-color: rgba(145, 255, 0, 0.315); 
+}
+.contentBar_3{
+    width: 100%;
+    height: 689px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+}
+.contentBar_3-Items{
+    width: 85%;
+    height: 689px;
+    background-color: rgba(255, 174, 0, 0.315); 
+}
 
 
+
+
+
+
+
+
+.contentBar_1{
+    width: 100%;
+    height: 689px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-family: 'Barlow', sans-serif;
+}
+.contentBar_1-Items{
+    width: 85%;
+    height: 689px;
+    /* background-color: rgba(255, 0, 0, 0.315);  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.contentBar_1-ItemImgBg{
+    width: 40%;
+    height: 100%;
+    background-image: url("img/Contnet_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contentBar_1-ItemElements{
+    width: 60%;
+    height: 100%;
+    /* background-color: green; */
+    padding: 60px 0 0 50px;
+}
+.contentBar_1-ItemElementsTitle{
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    color: #FF4D01;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.contentBar_1-ItemElementsTexts{
+    width: 100%;
+    height: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+}
+.contentBar_1-ItemElementsTextTop{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    font-size: 54px;
+    color: #191919;
+}
+.contentBar_1-ItemElementsTextBottom{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    justify-content: start;
+    align-items: center; 
+    font-size: 18px;
+    line-height: 30.01px;
+    color: #605E5D;
+}
+.contentBar_1-ItemElementsStatus{
+    width: 100%;
+    height: 20%;
+
+    background-image: url("img/Contnet_1-status.png");
+    /* background-size: cover; */
+    background-position-y: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+.contentBar_1-ItemElementsBtnBg{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.contentBar_1-ItemElementsBtn{
+    width: 237px;
+    height: 75px;
+    border: 2px solid #191919;
+    color: #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+.contentBar_1-ItemElementsBtn:hover{
+    background-color: #191919;
+    color: white;
+    transition: 0.2s all;
+}
 
 
 
