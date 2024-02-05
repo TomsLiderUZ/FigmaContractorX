@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.body{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    overflow-x: hidden;
+}
+/* *{
+    cursor: default;
+} */
+.contenir{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* background-color: red; */
+}
+.contenir::-webkit-scrollbar {
+    width: 10px;
+    display: none;
+} 
+.contenir::-webkit-scrollbar-track {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: transparent;
+}  
+.contenir::-webkit-scrollbar-thumb {
+    background: rgb(85, 84, 84);  
+    transition: 1s all;
+    height: 10px;
+}
+.contenir::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;    
+    background: gray; 
+}
+
+
+
+
+
+
+
+.navBarBg{
+    width: 100%;
+    height: 895px;
+    background-image: url("img/NavBg.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+    margin-bottom: 80px;
+    color: white;
+}
+
+.navBarBgContnet{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 31, 31, 0.822);  
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.navBarBgContnetTopMenu{
+    width: 90%;
+    height: 8%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Barlow', sans-serif;
+    padding: 2% 0 0 0;
+}
+.navBarMenuAlfa_1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+.navBarMenuAlfa_2{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navBarMenuAlfa_1-Item{
+    width: 20%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.1s all;
+    border-bottom: 3px solid transparent;
+}
+.navBarMenuAlfa_2-Item{
+    width: 21%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.1s all;
+    border-bottom: 3px solid transparent;
+}
+.navBarMenuAlfa_2-Item-btn{
+    background-color: #FF4D01;
+    width: 40%;
+    height: 90%;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+.navBarMenuAlfa_2-Item-btn:hover{
+    background-color: #ee8051;
+    transition: 0.1s all;
+    border: 0;
+}
+
+.navBarMenuAlfa_1-Item:hover{
+    border-bottom: 3px solid red;
+    font-size: 24px;
+    transition: 0.1s all;
+}
+.navBarMenuAlfa_2-Item:hover{
+    border-bottom: 3px solid red;
+    font-size: 24px;
+    transition: 0.1s all;
+}
+
+
+
+
+.navBarBgContnetTopContnet{
+    width: 90%;
+    height: 88%;
+    /* background-color: yellow;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Barlow', sans-serif;
+}
+.navBarBgContnetTopContnetTitleTexts{
+    width: 100%;
+    height: 38%;
+    /* background-color: yellow;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    cursor: default;
+}
+.navBarBgContnetTopContnetTitleTextTop{
+    font-size: 72px;
+    width: 100%;
+    height: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.navBarBgContnetTopContnetTitleBtns{
+    font-size: 20px;
+    width: 40%;
+    height: 48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: -370px;
+}
+.navBarBgContnetTopContnetTitleBtn{
+    width: 40%;
+    height: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+    transition: 0.1s all;
+}
+.navBarBgContnetTopContnetTitleBtn_get{
+    background-color: #FF4D01;
+    border: solid #FF4D01;
+}
+.navBarBgContnetTopContnetTitleBtn_ser{
+    border: solid white;
+}
+.navBarBgContnetTopContnetTitleBtn:hover{
+    background-color: #ee8051;
+    border: solid #ee8051;
+    transition: 0.1s all;
+}
+
+
+
+
+.contentBar_7{
+    width: 100%;
+    height: 850px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+    color: #191919;
+    /* background-color: rgba(0, 0, 0, 0.747); */
+}
+.contentBar_7-Contents{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+}
+
+.contentBar_7-TopContent{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    /* background-color: green; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentBar_7-TopContentStartText{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 20px;
+    color: #FF4D01;
+}
+.contentBar_7-TopContentEndElements{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #191919;
+}
+.contentBar_7-TopContentEndElementText{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 54px;
+}
+.contentBar_7-TopContentEndElementBtnBg{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 30px 0 0;    
+}
+.contentBar_7-TopContentEndElementBtn{
+    width: 204px;
+    height: 72px;
+    border: 2px solid #191919;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    transition: 0.2s all;
+}
+.contentBar_7-TopContentEndElementBtn:hover{
+    background-color: #191919;
+    color: white;
+    transition: 0.2s all;
+}
+
+
+
+
+
+
+.contentBar_7-BottomContent{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: yellow; */
+}
+.contentBar_7-BottomContentItem{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentBar_7-LeftContentImg{
+    width: 100%;
+    height: 75%;
+    /* background-color: rgb(112, 59, 59); */
+    background-image: url("img/Contnet_4-1.png");
+    background-size: 90%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+.contentBar_7-LeftContentTexts{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentBar_7-LeftContentTextName{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    font-size: 34px;
+}
+.contentBar_7-LeftContentTextDate{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 15px 0 0 31px;
+    font-size: 18px;
+}
+
+
+.contentBar_7-RightContent{
+  display: flex;  
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.contentBar_7-RightContentCard{
+    /* background-color: red; */
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+    cursor: pointer;
+}
+.contentBar_7-RightContentCardImgBg{
+    width: 30%;
+    height: 100%;
+    /* background-color: green; */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.ontentBar_7-RightContentCardImgBgImg1{
+    background-image: url("img/Contnet_4-2.png");
+}
+.ontentBar_7-RightContentCardImgBgImg2{
+    background-image: url("img/Contnet_4-3.png");
+}
+.ontentBar_7-RightContentCardImgBgImg3{
+    background-image: url("img/Contnet_4-4.png");
+}
+
+
+
+.contentBar_7-RightContentCardTexts{
+    width: 70%;
+    height: 100%;
+    display: flex;  
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentBar_7-RightContentCardText{
+    width: 100%;
+    height: 75%;
+    display: flex;  
+    justify-content: start;
+    align-items: end;
+    padding: 0 0 0 20px;
+    font-size: 25px;
+    /* background-color: red; */
+}
+.contentBar_7-RightContentCardDate{
+    padding: 5px 0 0 50px;
+    width: 100%;
+    height: 25%;
+    display: flex;  
+    justify-content: start;
+    align-items: start;
+    font-size: 18px;
+    color: #605E5D;
+}
+
+
+
+
+
+
+
+
+.footerBarBg{
+    width: 100%;
+    height: 450px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+.footerBarItemTop{
+    width: 83%;
+    height: 87%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+}
+.footerBarItemTopRow{
+    /* background-color: red; */
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: default;
+}
+.footerBarItemTopRow_1{
+    width: 18%;
+}
+.footerBarItemTopRow_2{
+    width: 25%;
+}
+.footerBarItemTopRow_3{
+    width: 20%;
+}
+.footerBarItemTopRow_4{
+    width: 28%;
+}
+
+.footerBarItemTopRow_1-texts{
+    color: #EAEAEB;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+.footerBarItemTopRow_1-elemnents{
+    margin-top: 20px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: nowrap;
+    padding: 0 0 0 5px;
+}
+.footerBarItemTopRow_1-elemnentsItem{
+    width: 36px;
+    height: 36px;
+    background-color: #FF4D01;
+    margin: 0 auto;
+}
+
+.footerBarItemTopRow_2-TitleTxt{
+    width: 100%;
+    height: 15%;
+    font-size: 22px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+.footerBarItemTopRow_2-catigore{
+    width: 100%;
+    height: 85%;
+    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 18px;
+    color: #EAEAEB;
+}
+.footerBarItemTopRow_2-catigoreRow{
+    width: 50%;
+    height: 90%;
+    /* background-color: red; */
+    padding: 15px 0 0 0;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.footerBarItemTopRow_2-catigoreRow-2{
+    padding: 15px 0 0 5px;
+}
+.ooterBarItemTopRow_2-catigoreRowText{
+    margin-top: 10px;
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+}
+.ooterBarItemTopRow_2-catigoreRowText:hover{
+    text-decoration: underline;
+}
+
+
+
+
+.footerBarItemTopRow_3-TitleTxt{
+    width: 100%;
+    height: 15%;
+    font-size: 22px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 0 0 20px;
+}
+.footerBarItemTopRow_3-catigore{
+    width: 100%;
+    height: 85%;
+    padding: 25px 0 0 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    color: #EAEAEB;
+    /* background-color: red; */
+}
+.ooterBarItemTopRow_3-catigoreRowText{
+    margin-top: 5px;
+    width: 100%;
+    height: 10%;
+    cursor: pointer;
+}
+.ooterBarItemTopRow_3-catigoreRowText:hover{
+    text-decoration: underline;
+}
+
+.footerBarItemTopRow_4-TitleTxt{
+    width: 100%;
+    height: 15%;
+    font-size: 22px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    /* padding: 0 0 0 20px; */
+}
+.footerBarItemTopRow_4-Cards{
+    width: 100%;
+    height: 85%;
+    padding: 25px 0 0 0;
+}
+.footerBarItemTopRow_4-CardItem{
+    width: 90%;
+    height: 40%;
+    border: 2px solid #FF4D01;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.footerBarItemTopRow_4-CardItemIcon{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerBarItemTopRow_4-CardItemTexts{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footerBarItemTopRow_4-CardItemTextTitle{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    margin-bottom: 3px;
+    margin-top: -3px;
+}
+.footerBarItemTopRow_4-CardItemTextValue{
+    width: 100%;
+    height: 50%; 
+    display: flex;
+    justify-content: start;
+    align-items: start;   
+    cursor: pointer;
+}
+.footerBarItemTopRow_4-CardItemTextValue:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+.footerBarItemBottom{
+    width: 80%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    cursor: default;
+}
+.footerBarItemBottomTextLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: #989899;
+}
+
+.footerBarItemBottomTextRight{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.footerBarItemBottomTextRightItem{
+    margin: 0 5px;
+}
+.footerBarItemBottomTextRightTxt{
+    color: white;
+}
+.footerBarItemBottomTextRightLink{
+    color: #FF4D01;
+    cursor: pointer;
+}
+.footerBarItemBottomTextRightLink:hover{
+    color: red;
+    text-decoration: underline;
+}
