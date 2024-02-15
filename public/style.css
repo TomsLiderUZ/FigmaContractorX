@@ -48,7 +48,7 @@ body{
     flex-wrap: wrap;
     position: absolute;
     top: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 
 
@@ -59,9 +59,8 @@ body{
     justify-content: start;
     align-items: center;
     background-color: rgb(10, 115, 180);
-    overflow: hidden;
     z-index: 600;
-    border-bottom: 1px solid rgba(59, 59, 59, 0.87)
+    box-shadow: 0px 7px 21px 1px rgb(59, 59, 59);
 }
 
 .navBarBgLeft{
@@ -101,6 +100,8 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-left: 10px;
+    transition: 0.2s all;
 }
 .navBarMenuItem{
     width: 22%;
@@ -113,7 +114,7 @@ body{
     position: relative;
     z-index: 15;
     transition: 0.2s all;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .navBarMenuItemOwn{
     cursor: default;
@@ -121,17 +122,25 @@ body{
     border-bottom: 3px solid white;
 }
 
+.fa-chevron-down{
+    display: none;
+    display: none;
+    margin-left: 5px;
+}
+.fa-chevron-up{
+    display: none;
+    margin-left: 5px;
+}
+
 .navBarMenuItemNotOwn{
     cursor: pointer;
     border-radius: 10px;
-    border-bottom: 3px solid transparent;
     transition: 0.3s all;
 }
 
 .navBarMenuItemNotOwn:hover{
-    border-bottom: 3px solid rgba(0, 0, 0, 0.438);
+    background-color: rgb(45, 159, 230);
     box-shadow:0px 0px 15px 2px rgba(0, 0, 0, 0.438);
-    border-radius: 10px;
     transition: 0.3s all;
 }
 
@@ -351,7 +360,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     font-family: sans-serif;
     font-weight: 700;
@@ -367,11 +376,13 @@ body{
 .contentsBar_SideBar{
     width: 17%;
     height: 100%;
-    padding: 0 0 200px 0;
     display: flex;
     overflow: hidden;
     justify-content: start;
     align-items: center;
+    position: relative;
+    z-index: 750;
+    top: 0;
 }
 .contentsBar_SideBarCards{
     width: 100%;
@@ -379,6 +390,8 @@ body{
     background-color: rgb(170, 169, 169);
     overflow-y: auto;
     border-right: 1px solid black;
+    position: relative;
+    z-index: 5;
 
 }
 .contentsBar_SideBarBack{
@@ -466,19 +479,18 @@ body{
 .footerBarBg{
     width: 100%;
     display: flex;
-    min-height: 7.2%;
+    height: 7%;
+    max-height: 40px;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     overflow: hidden; 
     font-size: 15px;
     font-family: sans-serif;
     background-color: rgb(20, 20, 20);
-    position: sticky;
-    bottom: 0;
 }
 .footerBarContnet{
     width: 100%;
-    height: 39px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -489,22 +501,13 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media only screen and (max-width: 1125px) {
+    .navBarMenuItem{
+        font-size: 15px;
+        width: 20%;
+        height: 50%;
+    }
+
     .navBarMenuGetSidBarBtnBg{
         display: flex;
     }
@@ -512,7 +515,6 @@ body{
     .contentsBar_SideBar{
         position: absolute;
         z-index: 750;
-        top: 0;
         width: 100%;
         display: none;
     }
@@ -521,11 +523,10 @@ body{
     }
     .contentsBar_SideBarCards{
         width: 50%;
+        height: 100%;
         margin-left: -600px;
         opacity: 0;
         transition: 0.2s all;
-        position: relative;
-        z-index: 5;
     }
     .contentsBar_SideBarBack{
         display: flex;
@@ -533,7 +534,7 @@ body{
 
 
     .navBarJoinBtn{
-        width: 80%;
+        width: 85%;
         height: 55%;
         font-size: 15px;
         font-weight: 600;
@@ -542,11 +543,206 @@ body{
 
 
 
+@media only screen and (max-width: 950px) {
+    .navBarMenuItem{
+        font-size: 11px;
+        width: 21%;
+        height: 40%;
+    }
+    .navBarMenus{
+        width: 45%;
+    }
+}
 
+@media only screen and (max-width: 780px) {
+    .navBarJoinBtn{
+        width: 70%;
+        height: 50%;
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .navBarMenus{
+        width: 50%;
+    }
+    .navBarBgLeft{
+        width: 75%;
+    }
+    .navBarBgRight{
+        width: 25%;
+    }
+
+    .navBarLogo{
+        width: 15%;
+    }
+}
 
 
 @media only screen and (max-width: 700px) {
     .contentsBar_SideBarCards{
         width: 80%;
+    }
+    .navBarMenus{
+        width: 55%;
+    }
+}
+
+
+@media only screen and (max-width: 675px) {
+    .navBarJoinBtn{
+        width: 88%;
+        height: 50%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .navBarMenus{
+        width: 75%;
+    }
+
+    .navBarLogo{
+        width: 20%;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .navBarJoinBtn{
+        width: 88%;
+        height: 50%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .navBarMenus{
+        width: 80%;
+    }
+
+    .navBarLogo{
+        width: 20%;
+    }
+    .navBarMenuItem{
+        font-size: 11px;
+        width: 21%;
+        height: 40%;
+    }
+
+    .navBarBgLeft{
+        width: 70%;
+    }
+    .navBarBgRight{
+        width: 30%;
+    }
+}
+
+
+
+@media only screen and (max-width: 450px) {
+    .navBarJoinBtn{
+        width: 88%;
+        height: 50%;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .navBarLogo{
+        width: 25%;
+    }
+    .navBarBgLeft{
+        width: 65%;
+    }
+    .navBarBgRight{
+        width: 35%;
+    }
+    .navBarMenus{
+        width: 50%;
+        height: 100%;
+        flex-wrap: wrap;
+        margin-left: 20px;
+    }
+    .navBarMenuItem{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: 0;
+        font-size: 18px;
+        margin-top: -0.9px;
+        letter-spacing: 1px;
+    }
+    .navBarMenuItemOwn{
+        border-bottom: 3px solid white;
+        height: 80%;
+        font-size: 22;
+    }
+    .navBarMenuItemNotOwn{
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        border-left: 1px solid black;
+        border-right: 1px solid rgba(0, 0, 0,  0.979);
+        background-color: rgba(10, 115, 180, 0.979);
+        backdrop-filter: blur(2px);
+    }
+    .navBarMenuItemNotOwn:nth-child(2){
+        border-radius: 20px 20px 0 0 ;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        margin-top: 10px;
+    }
+    .navBarMenuItemNotOwn:nth-child(4){
+        border-radius: 0 0 20px 20px;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .navBarMenus:hover .navBarMenuItemNotOwn{
+        height: 100%;
+        opacity: 1;
+    }
+    .navBarMenuItemNotOwn:hover{
+        border: 0;
+        box-shadow: 0px 0px 0px 0px transparent;
+        background-color: rgb(7, 79, 124);
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .navBarMenuItemNotOwn:nth-child(4):hover{
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+    .navBarMenuItemNotOwn:nth-child(2):hover{
+        border-radius: 20px 20px 0 0 ;
+        border-top: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+    }
+
+    .fa-chevron-down{
+        display: block;
+    }
+    .navBarMenus:hover .fa-chevron-down{
+        display: none;
+    }
+    .navBarMenus:hover .fa-chevron-up{
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .navBarLogo{
+        width: 35%;
+    }
+    .navBarBgLeft{
+        width: 60%;
+    }
+    .navBarBgRight{
+        width: 40%;
+    }
+    .navBarMenuItem{
+        font-size: 15px;
+        margin-top: -0.9px;
+        letter-spacing: 1px;
+    }
+    .navBarMenuItemNotOwn{
+        height: 80% !important;
     }
 }
