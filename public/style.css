@@ -2,27 +2,15 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     height: 100%;
     width: 100%;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(226, 226, 226);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
     color: white;
 }
+
 /* *::selection{
     background-color: transparent;
 } */
@@ -498,6 +486,22 @@ body{
     font-size: 15px;
     font-family: sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1125px) {
